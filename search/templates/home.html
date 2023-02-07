@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en-za">
+<head>
+    <meta charset="UTF-8">
+    <title>WordSearch</title>
+</head>
+<body>
+<h1>Type in a word to search.</h1>
+
+<form action="{% url 'search' %}">
+    {{ form }}
+    <input type="text" name="word" placeholder="Enter a word" required><br><br>
+    <input type="submit" value="Search">
+</form>
+</body>
+</html>
